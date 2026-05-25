@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anxiety Disorders, GAD & Panic Attacks: DSM-5-TR Revision Notes</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #319795;
+            --text-color: #2d3748;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --pearl-bg: #fffaf0;
+            --pearl-border: #dd6b20;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .meta-info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            background-color: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        nav h2 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ebf8ff;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7fafc;
+        }
+
+        .mnemonic-box {
+            background-color: #edf2f7;
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .mnemonic-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .pearl-box {
+            background-color: var(--pearl-bg);
+            border-left: 4px solid var(--pearl-border);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .pearl-title {
+            font-weight: bold;
+            color: var(--pearl-border);
+            margin-bottom: 5px;
+        }
+
+        .diagram-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f7fafc;
+            border: 1px dashed #cbd5e0;
+            border-radius: 8px;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .diagram-caption {
+            font-size: 0.85rem;
+            color: #718096;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Author Profile Styles */
+        .author-card {
+            background: linear-gradient(to right, #f7fafc, #edf2f7);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 50px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .author-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .author-details h3 {
+            margin: 0 0 5px 0;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+        }
+
+        .author-title {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .author-bio {
+            font-size: 0.9rem;
+            margin: 0;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.85rem;
+            color: #a0aec0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Anxiety Disorders, GAD & Panic Attacks</h1>
+        <p>DSM-5-TR High-Yield Revision Notes for Medical Students & Clinicians</p>
+        <div class="meta-info">
+            <span><strong>Target:</strong> USMLE Step 1 / 2 CK / 3, Medical Finals</span>
+            <span><strong>Classification:</strong> DSM-5-TR Psychiatric Disorders</span>
+        </div>
+    </header>
+
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#intro">1. Introduction & Terminology</a></li>
+            <li><a href="#classification">2. Classification & Pathophysiology</a></li>
+            <li><a href="#gad">3. Generalized Anxiety Disorder</a></li>
+            <li><a href="#panic">4. Panic Attack & Panic Disorder</a></li>
+            <li><a href="#differential">5. Medical & Psychiatric Differentials</a></li>
+            <li><a href="#management">6. Management & Clinical Pearls</a></li>
+        </ul>
+    </nav>
+
+    <section id="intro">
+        <h2>1. Introduction & Terminology Overview</h2>
+        <p>Anxiety is a normal adaptive response to a perceived threat. However, it becomes clinical pathology when it meets specific maladaptive thresholds.</p>
+        
+        <div class="pearl-box">
+            <div class="pearl-title">Pathological Anxiety Markers</div>
+            Excessive • Persistent • Difficult to control • Disproportionate to the situation • Functionally impairing
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Term</th>
+                    <th>Clinical Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Anxiety</strong></td>
+                    <td>Normal human emotion or transient clinical symptom.</td>
+                </tr>
+                <tr>
+                    <td><strong>Anxiety Disorder</strong></td>
+                    <td>A diagnostic cluster of psychiatric illnesses characterized by excessive fear and anxiety.</td>
+                </tr>
+                <tr>
+                    <td><strong>GAD</strong></td>
+                    <td>A chronic, persistent disorder characterized by excessive, multi-domain worry.</td>
+                </tr>
+                <tr>
+                    <td><strong>Panic Attack</strong></td>
+                    <td>An acute, sudden, discrete episode of intense fear peaking within minutes.</td>
+                </tr>
+                <tr>
+                    <td><strong>Panic Disorder</strong></td>
+                    <td>Recurrent, unexpected panic attacks accompanied by persistent anticipatory anxiety.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Fear vs. Anxiety</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Fear</th>
+                    <th>Anxiety</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Trigger</strong></td>
+                    <td>Response to an immediate, definite threat</td>
+                    <td>Anticipation of a future, vague threat</td>
+                </tr>
+                <tr>
+                    <td><strong>Temporal Profile</strong></td>
+                    <td>Acute</td>
+                    <td>Chronic / persistent</td>
+                </tr>
+                <tr>
+                    <td><strong>Somatic Driver</strong></td>
+                    <td>Fight-or-flight dominant (sympathetic blast)</td>
+                    <td>Hypervigilance and tension dominant</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="classification">
+        <h2>2. DSM-5 Anxiety Disorders Classification & Neurobiology</h2>
+        <p>According to the DSM-5-TR, the major anxiety disorders cluster includes:</p>
+        <div class="grid-2">
+            <ul>
+                <li>Generalized Anxiety Disorder (GAD)</li>
+                <li>Panic Disorder</li>
+                <li>Social Anxiety Disorder (SAD)</li>
+                <li>Specific Phobias</li>
+            </ul>
+            <ul>
+                <li>Agoraphobia</li>
+                <li>Separation Anxiety Disorder</li>
+                <li>Selective Mutism</li>
+            </ul>
+        </div>
+
+        <h3>Pathophysiology</h3>
+        <p>Understanding the neurocircuitry is critical for board exams and explaining pharmacological mechanisms to patients:</p>
+        <ul>
+            <li><strong>Key Brain Regions Involved:</strong> Amygdala (threat processing), Prefrontal Cortex (impaired top-down regulation), Hippocampus (contextual conditioning), and Locus Coeruleus (norepinephrine surge).</li>
+            <li><strong>Neurotransmitter Dysregulation:</strong> Decreased <strong>Serotonin (5-HT)</strong> and <strong>GABA</strong>; elevated <strong>Norepinephrine (NE)</strong>. Glutamate and Dopamine are also implicated in modulatory roles.</li>
+        </ul>
+
+        <div class="diagram-container">
+            <img src="https://ibb.co/FbrbGTc1" alt="Neurobiology of Anxiety Disorders and Clinical Pathways">
+            <div class="diagram-caption">Figure 1: Pathophysiological pathways, neurocircuitry modifications, and clinical symptom correlation.</div>
+        </div>
+    </section>
+
+    <section id="gad">
+        <h2>3. Generalized Anxiety Disorder (GAD)</h2>
+        <p>Characterized by persistent, uncontrollable, multi-domain worry occurring more days than not across a prolonged period.</p>
+        
+        <h3>DSM-5-TR Diagnostic Criteria</h3>
+        <ol type="A">
+            <li><strong>Excessive anxiety and worry</strong> occurring more days than not for at least <strong>&ge; 6 months</strong>, spanning multiple domains (e.g., work, health, family, finances, daily chores).</li>
+            <li>The individual finds it <strong>difficult to control</strong> the worry.</li>
+            <li>Associated with <strong>&ge; 3 of the following 6 somatic/cognitive symptoms</strong> (only 1 item is required in pediatric patients):</li>
+        </ol>
+
+        <div class="mnemonic-box">
+            <div class="mnemonic-title">Diagnostic Mnemonic: &ldquo;RFCIMS&rdquo;</div>
+            <ul>
+                <li><strong>R</strong> &ndash; Restlessness or feeling keyed up/on edge</li>
+                <li><strong>F</strong> &ndash; Fatigue (easily exhausted)</li>
+                <li><strong>C</strong> &ndash; Concentration difficulties or mind going blank</li>
+                <li><strong>I</strong> &ndash; Irritability</li>
+                <li><strong>M</strong> &ndash; Muscle tension (prominent physical feature)</li>
+                <li><strong>S</strong> &ndash; Sleep disturbance (onset insomnia, restless sleep)</li>
+            </ul>
+        </div>
+
+        <ol type="A" start="4">
+            <li>The symptoms cause clinically significant distress or functional impairment.</li>
+            <li>The disturbance is not attributable to physiological effects of a substance or medical condition.</li>
+        </ol>
+
+        <h3>Clinical Presentation Overlap</h3>
+        <div class="grid-2">
+            <div>
+                <h4>Psychological Elements</h4>
+                <ul>
+                    <li>Persistent worry & catastrophizing</li>
+                    <li>Overthinking & cognitive locked loops</li>
+                    <li>Compulsive reassurance seeking</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Somatic & Behavioral</h4>
+                <ul>
+                    <li>Tension headaches & muscle stiffness</li>
+                    <li>Autonomic hyperarousal (GI upset, palpitations)</li>
+                    <li>Avoidance and procrastination</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pearl-box">
+            <div class="pearl-title">Typical Patient Presentation Note</div>
+            <em>&ldquo;Doctor, my brain never stops. I worry about my health, my kids, and mistakes at work. Even small things stress me out and I can't turn it off.&rdquo;</em>
+        </div>
+    </section>
+
+    <section id="panic">
+        <h2>4. Panic Attack vs. Panic Disorder</h2>
+        <p>A crucial exam and clinical distinction must be maintained between a <em>panic attack</em> (a transient event) and <em>panic disorder</em> (a syndromic condition).</p>
+        
+        <h3>Panic Attack Definition & Criteria</h3>
+        <p>An abrupt surge of intense fear or intense discomfort that peaks within minutes, during which <strong>&ge; 4 of the following symptoms</strong> occur:</p>
+        
+        <div class="grid-2">
+            <ul>
+                <li>Palpitations, pounding heart</li>
+                <li>Sweating, trembling, shaking</li>
+                <li>Shortness of breath / choking sensations</li>
+                <li>Chest pain or discomfort</li>
+                <li>Nausea or abdominal distress</li>
+            </ul>
+            <ul>
+                <li>Dizziness, unsteadiness, or faintness</li>
+                <li>Chills or heat sensations</li>
+                <li>Paresthesias (numbness/tingling)</li>
+                <li>Derealization or Depersonalization</li>
+                <li>Fear of losing control or &ldquo;going crazy&rdquo;</li>
+                <li>Fear of dying</li>
+            </ul>
+        </div>
+
+        <div class="diagram-container">
+            <img src="https://ibb.co/HfqhCYsX" alt="Somatic and Cognitive Cascade of a Panic Attack">
+            <div class="diagram-caption">Figure 2: Step-by-step presentation, autonomic surge mapping, and longitudinal management transitions.</div>
+        </div>
+
+        <h3>Panic Disorder Criteria</h3>
+        <p>Diagnosis requires <strong>recurrent, unexpected panic attacks</strong> followed by <strong>&ge; 1 month</strong> of one or both of the following:</p>
+        <ul>
+            <li>Persistent concern or worry about additional panic attacks or their consequences (e.g., losing control, having a heart attack).</li>
+            <li>A significant maladaptive change in behavior related to the attacks (e.g., avoidance of exercise, shopping malls, or public transit to prevent an attack).</li>
+        </ul>
+
+        <h3>Head-to-Head Comparison</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Generalized Anxiety Disorder (GAD)</th>
+                    <th>Panic Disorder</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Core Feature</strong></td>
+                    <td>Chronic, free-floating, pervasive worry</td>
+                    <td>Recurrent, sudden-onset autonomic terror</td>
+                </tr>
+                <tr>
+                    <td><strong>Onset & Profile</strong></td>
+                    <td>Gradual onset; continuous across months</td>
+                    <td>Sudden paroxysmal onset; peaks in &lt;10 mins</td>
+                </tr>
+                <tr>
+                    <td><strong>Primary Cognitive Fear</strong></td>
+                    <td>Failure, health of loved ones, day-to-day errors</td>
+                    <td>Fear of imminent death, stroke, or going crazy</td>
+                </tr>
+                <tr>
+                    <td><strong>Somatic Signpost</strong></td>
+                    <td>Prominent skeletal muscle tension</td>
+                    <td>Severe autonomic storm (palpitations, dyspnea)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="differential">
+        <h2>5. Medical & Psychiatric Differentials</h2>
+        <p>Anxiety and panic are diagnoses of exclusion. Somatic mimicry must always be thoroughly evaluated before assigning a psychiatric etiology.</p>
+        
+        <div class="grid-2">
+            <div>
+                <h4>Organic Medical Differentials</h4>
+                <ul>
+                    <li><strong>Hyperthyroidism</strong> (Check TSH/Free T4)</li>
+                    <li><strong>Cardiac Arrhythmias</strong> (e.g., SVT)</li>
+                    <li><strong>Pheochromocytoma</strong> (Episodic HTN/sweats)</li>
+                    <li><strong>Hypoglycemia</strong></li>
+                    <li><strong>Pulmonary Embolism / Asthma</strong></li>
+                    <li><strong>Substance/Caffeine Intoxication</strong></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Psychiatric Differentials</h4>
+                <ul>
+                    <li>Major Depressive Disorder (MDD)</li>
+                    <li>Obsessive-Compulsive Disorder (OCD)</li>
+                    <li>Post-Traumatic Stress Disorder (PTSD)</li>
+                    <li>Illness Anxiety Disorder</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="management">
+        <h2>6. Comprehensive Management Principles</h2>
+        
+        <h3>Non-Pharmacological (First-Line)</h3>
+        <ul>
+            <li><strong>Cognitive Behavioral Therapy (CBT):</strong> Cognitive restructuring to target catastrophizing, combined with systemic exposure protocols for panic-related avoidant behaviors.</li>
+            <li><strong>Adjunctive Interventions:</strong> Applied relaxation, structured sleep hygiene tracking, diaphragmatic breathing metrics, and aerobic exercise.</li>
+        </ul>
+
+        <h3>Pharmacological Intervention Strategy</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Line of Therapy</th>
+                    <th>Drug Classes & Examples</th>
+                    <th>Clinical Notes & Key Strategies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>First-Line (Long-term)</strong></td>
+                    <td><strong>SSRIs:</strong> Escitalopram, Sertraline, Paroxetine<br><strong>SNRIs:</strong> Venlafaxine, Duloxetine</td>
+                    <td>Delayed onset (4&ndash;6 weeks). Start at half the typical depressive dose to minimize transient initial activation/anxiety spikes.</td>
+                </tr>
+                <tr>
+                    <td><strong>Second-Line / Adjuncts</strong></td>
+                    <td><strong>Buspirone</strong> (GAD only)<br><strong>Pregabalin / Hydroxyzine</strong></td>
+                    <td>Buspirone requires scheduled dosing (not PRN) and does not possess immediate efficacy or sedative properties.</td>
+                </tr>
+                <tr>
+                    <td><strong>Acute / Short-Term</strong></td>
+                    <td><strong>Benzodiazepines:</strong> Clonazepam, Alprazolam</td>
+                    <td>Use with strict limitations to avoid dependence, tolerance, cognitive blunting, and withdrawal syndromes. Useful as bridging therapy.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pearl-box">
+            <div class="pearl-title">High-Yield Exam Pearls</div>
+            <ul>
+                <li><strong>Panic Attacks inside other conditions:</strong> Panic attacks can happen in PTSD, MDD, and phobias. Panic <em>Disorder</em> specifically requires unexpected attacks paired with &ge;1 month of anticipatory dread or behavioral avoidance.</li>
+                <li><strong>Scale Metrics:</strong> Use GAD-7 tracking tools for objectivity in clinical trials and field tracking logistics.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="author-card">
+        <img src="https://via.placeholder.com/120" alt="Dr. Hamid Fazal" class="author-img">
+        <div class="author-details">
+            <h3>Dr. Hamid Fazal</h3>
+            <div class="author-title">Field Resident Medical Officer (RMO) • Specialist in Clinical Nutrition</div>
+            <p class="author-bio">
+                Dr. Hamid Fazal is an experienced medical practitioner holding an MBBS (1997) and ECFMG Certification/MD (2003). After completing USMLE Step 3 in 2006, he specialized further with a Postgraduate Diploma in Nutrition (AIOU, 2018). He currently manages clinical service delivery, emergency responses, and public health statistics optimization within community medicine field outreach camps. His professional work focuses on medical education, evidence-based guidelines translation, and the integration of advanced data processing systems to optimize patient care in field settings.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Dr. Hamid Fazal. Provided open-access for educational purposes, board preparation, and medical reference documentation.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
+
