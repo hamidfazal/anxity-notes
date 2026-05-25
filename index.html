@@ -201,6 +201,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
+            margin-bottom: 15px;
         }
 
         @media (max-width: 768px) {
@@ -209,6 +210,10 @@
             }
             header h1 {
                 font-size: 1.8rem;
+            }
+            .author-card {
+                flex-direction: column;
+                text-align: center;
             }
         }
 
@@ -234,6 +239,10 @@
             flex-shrink: 0;
         }
 
+        .author-details {
+            flex-grow: 1;
+        }
+
         .author-details h3 {
             margin: 0 0 5px 0;
             color: var(--primary-color);
@@ -244,14 +253,14 @@
             font-weight: 600;
             color: var(--secondary-color);
             font-size: 0.95rem;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .author-bio {
             font-size: 0.9rem;
             margin: 0;
             color: #4a5568;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         footer {
@@ -289,6 +298,7 @@
         </ul>
     </nav>
 
+    <!-- SECTION 1 -->
     <section id="intro">
         <h2>1. Introduction & Terminology Overview</h2>
         <p>Anxiety is a normal adaptive response to a perceived threat. However, it becomes clinical pathology when it meets specific maladaptive thresholds.</p>
@@ -358,6 +368,7 @@
         </table>
     </section>
 
+    <!-- SECTION 2 -->
     <section id="classification">
         <h2>2. DSM-5 Anxiety Disorders Classification & Neurobiology</h2>
         <p>According to the DSM-5-TR, the major anxiety disorders cluster includes:</p>
@@ -382,12 +393,14 @@
             <li><strong>Neurotransmitter Dysregulation:</strong> Decreased <strong>Serotonin (5-HT)</strong> and <strong>GABA</strong>; elevated <strong>Norepinephrine (NE)</strong>. Glutamate and Dopamine are also implicated in modulatory roles.</li>
         </ul>
 
+        <!-- Diagram 1 -->
         <div class="diagram-container">
-            <img src="https://ibb.co/FbrbGTc1" alt="Neurobiology of Anxiety Disorders and Clinical Pathways">
+            <img src="neurobiology.jpg" alt="Neurobiology of Anxiety Disorders and Clinical Pathways">
             <div class="diagram-caption">Figure 1: Pathophysiological pathways, neurocircuitry modifications, and clinical symptom correlation.</div>
         </div>
     </section>
 
+    <!-- SECTION 3 -->
     <section id="gad">
         <h2>3. Generalized Anxiety Disorder (GAD)</h2>
         <p>Characterized by persistent, uncontrollable, multi-domain worry occurring more days than not across a prolonged period.</p>
@@ -442,6 +455,7 @@
         </div>
     </section>
 
+    <!-- SECTION 4 -->
     <section id="panic">
         <h2>4. Panic Attack vs. Panic Disorder</h2>
         <p>A crucial exam and clinical distinction must be maintained between a <em>panic attack</em> (a transient event) and <em>panic disorder</em> (a syndromic condition).</p>
@@ -467,8 +481,9 @@
             </ul>
         </div>
 
+        <!-- Diagram 2 -->
         <div class="diagram-container">
-            <img src="https://ibb.co/HfqhCYsX" alt="Somatic and Cognitive Cascade of a Panic Attack">
+            <img src="panic-cascade.jpg" alt="Somatic and Cognitive Cascade of a Panic Attack">
             <div class="diagram-caption">Figure 2: Step-by-step presentation, autonomic surge mapping, and longitudinal management transitions.</div>
         </div>
 
@@ -513,6 +528,7 @@
         </table>
     </section>
 
+    <!-- SECTION 5 -->
     <section id="differential">
         <h2>5. Medical & Psychiatric Differentials</h2>
         <p>Anxiety and panic are diagnoses of exclusion. Somatic mimicry must always be thoroughly evaluated before assigning a psychiatric etiology.</p>
@@ -541,6 +557,7 @@
         </div>
     </section>
 
+    <!-- SECTION 6 -->
     <section id="management">
         <h2>6. Comprehensive Management Principles</h2>
         
@@ -587,13 +604,17 @@
         </div>
     </section>
 
+    <!-- AUTHOR BIOGRAPHY CARD -->
     <div class="author-card">
-        <img src="https://via.placeholder.com/120" alt="Dr. Hamid Fazal" class="author-img">
+        <img src="neurobiology.jpg" alt="Dr. Hamid Fazal" class="author-img">
         <div class="author-details">
             <h3>Dr. Hamid Fazal</h3>
-            <div class="author-title">Field Resident Medical Officer (RMO) • Specialist in Clinical Nutrition</div>
+            <div class="author-title">MBBS, MD (USA), PGD (Nutrition) • Physician & Medical Educator</div>
             <p class="author-bio">
-                Dr. Hamid Fazal is an experienced medical practitioner holding an MBBS (1997) and ECFMG Certification/MD (2003). After completing USMLE Step 3 in 2006, he specialized further with a Postgraduate Diploma in Nutrition (AIOU, 2018). He currently manages clinical service delivery, emergency responses, and public health statistics optimization within community medicine field outreach camps. His professional work focuses on medical education, evidence-based guidelines translation, and the integration of advanced data processing systems to optimize patient care in field settings.
+                Dr. Hamid Fazal is a physician working at the intersection of chronic disease and mental health. His extensive clinical background spans ICU medicine, CKD, and dialysis care, including a four-year tenure as an OPD In-charge managing complex patients with chronic kidney disease, diabetes, and hypertension. Dedicated to community health, he is actively involved in psychiatry community outreach services, providing essential care for individuals with neurodevelopmental and neurocognitive disorders, including epilepsy, cerebral palsy, intellectual disability, and behavioral conditions.
+            </p>
+            <p class="author-bio" style="margin-top: 10px;">
+                Dr. Fazal's clinical and academic interests focus on neuropsychiatry, cognitive aging, dementia, nutrition in chronic disease, and the psychiatric manifestations of chronic medical illnesses. He is passionate about leveraging AI-assisted tools and evidence-based approaches to design accessible, high-yield medical education resources for clinicians, students, and healthcare professionals worldwide, while actively working toward expanding dedicated community support services for special-needs children.
             </p>
         </div>
     </div>
